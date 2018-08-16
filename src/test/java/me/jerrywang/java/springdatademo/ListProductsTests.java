@@ -8,8 +8,11 @@ public class ListProductsTests {
   @Test
   public void listProductById() {
     given()
+        .baseUri("http://localhost")
+        .port(8080)
+        .basePath("/api/v1")
         .when()
-        .get("http://localhost:8080/api/v1/products/1")
+        .get("/products/1")
         .then()
         .statusCode(200)
         .assertThat()
