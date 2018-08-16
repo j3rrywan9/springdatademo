@@ -23,6 +23,7 @@
     <querydsl.version>4.1.3</querydsl.version>
 
     <thymeleaf.version>3.0.7.RELEASE</thymeleaf.version>
+    <rest.assured.version>3.1.0</rest.assured.version>
   </properties>
 
   <build>
@@ -99,6 +100,18 @@
       <groupId>org.thymeleaf</groupId>
       <artifactId>thymeleaf-spring4</artifactId>
       <version>${thymeleaf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>${rest.assured.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>
