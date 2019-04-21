@@ -9,6 +9,7 @@ import javax.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import org.springframework.hateoas.Identifiable;
 
 @Entity(name = "product")
@@ -16,6 +17,7 @@ import org.springframework.hateoas.Identifiable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Product implements Identifiable<Long> {
+
   @Id
   private Long id;
 

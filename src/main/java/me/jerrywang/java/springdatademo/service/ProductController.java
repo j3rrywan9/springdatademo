@@ -2,15 +2,15 @@ package me.jerrywang.java.springdatademo.service;
 
 import java.util.List;
 
-import me.jerrywang.java.springdatademo.data.ProductRepository;
-import me.jerrywang.java.springdatademo.domain.Product;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.webmvc.BasePathAwareController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import me.jerrywang.java.springdatademo.data.ProductRepository;
+import me.jerrywang.java.springdatademo.domain.Product;
 
 @BasePathAwareController
 @RestController

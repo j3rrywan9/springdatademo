@@ -2,9 +2,11 @@ package me.jerrywang.java.springdatademo;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
+
 import org.junit.Test;
 
 public class ListProductsTests {
+
   @Test
   public void listProductById() {
     given()
