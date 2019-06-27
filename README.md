@@ -12,3 +12,4 @@ The `CrudRepository` provides sophisticated CRUD functionality for the entity cl
 We also provide persistence technology-specific abstractions like e.g. `JpaRepository` or `MongoRepository`.
 Those interfaces extend `CrudRepository` and expose the capabilities of the underlying persistence technology in addition to the rather generic persistence technology-agnostic interfaces like e.g. `CrudRepository`.
 
+On top of the `CrudRepository` there is a `PagingAndSortingRepository` abstraction that adds additional methods to ease paginated access to entities.
